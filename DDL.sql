@@ -45,7 +45,7 @@ MODIFY last_name VARCHAR(50) NOT NULL;
 
 -- Rename the 'students' table to 'student_registration'
 ALTER TABLE students
-RENAME TO student_registration
+RENAME TO student_registration;
 
 SELECT * from student_registration; 
 
