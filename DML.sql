@@ -39,6 +39,13 @@ SET SQL_SAFE_UPDATES = 0;
 UPDATE students
 SET enrollment_date = '2026-05-04';
 
+INSERT INTO students (first_name, last_name, email, enrollment_date)
+VALUES ('keira', 'Wong', 'keira.wong@example.com', '2026-05-15' );
+
+UPDATE students
+SET enrollment_date = '2026-05-16'
+WHERE first_name = 'Anna';
+
 -- 5) Create table 'archived_students'
 CREATE TABLE archived_students (
     student_id INT AUTO_INCREMENT PRIMARY KEY,            -- Unique ID, auto-increment
