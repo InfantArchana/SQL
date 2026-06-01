@@ -161,7 +161,6 @@ FROM students
 LEFT JOIN enrollments ON students.student_id = enrollments.student_id
 LEFT JOIN courses ON enrollments.course_id = courses.course_id;
 
-
 -- RIGHT JOIN
 SELECT students.student_id, students.first_name
 FROM students
